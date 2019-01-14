@@ -9,6 +9,7 @@ const DisplayCard = function (element) {
 DisplayCard.prototype.populate = function(card) {
   this.element.innerHTML = "";
   this.element.innerHTML += `<h2>${card.name}</h2>`;
+  this.element.innerHTML += `<img src="https://art.hearthstonejson.com/v1/render/latest/enUS/256x/${card.id}.png" alt="${card.name}">`;
   this.element.innerHTML += `<p>Cost: ${card.cost} mana</p>`;
   this.element.innerHTML += `<p>Class: ${card.cardClass}</p>`;
   this.element.innerHTML += `<p>Type: ${card.type}</p>`;
